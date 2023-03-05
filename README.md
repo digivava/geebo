@@ -16,6 +16,8 @@ Make sure you have Go installed by following [these](https://go.dev/doc/install)
 
 When you're ready to make your own changes, practice creating your own branch with `git checkout -b <branch-name>` , then once you've written your code and tested it, create a pull request in GitHub against the `main` branch when you're ready for review.
 
+When you write a test, you can run the tests with `go test .`
+
 ## Exercises
 
 1. Your teammates noticed an issue where for some reason, they aren't seeing any server logs when a request comes in to delete a user. Can you fix this?
