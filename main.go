@@ -28,7 +28,7 @@ func main() {
 	router.HandleFunc("/users", createUser).Methods("POST")
 	router.HandleFunc("/users/{id}", updateUser).Methods("PUT")
 	router.HandleFunc("/users/{id}", deleteUser).Methods("DELETE")
-	// nerd
+
 	// Start the HTTP server
 	log.Printf("Serving on port 8000...")
 	log.Fatal(http.ListenAndServe(":8000", router))
