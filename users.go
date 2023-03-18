@@ -66,6 +66,8 @@ func updateUser(w http.ResponseWriter, r *http.Request) {
 }
 
 func deleteUser(w http.ResponseWriter, r *http.Request) {
+	log.Printf("Received deleteUser request.")
+
 	w.Header().Set("Content-Type", "application/json")
 	params := mux.Vars(r)
 	for index, user := range users {
