@@ -10,9 +10,10 @@ import (
 )
 
 type User struct {
-	ID    int    `json:"id"`
-	Name  string `json:"name"`
-	Email string `json:"email"`
+	ID       int    `json:"id"`
+	Name     string `json:"name"`
+	Email    string `json:"email"`
+	Username string `json:"username"`
 }
 
 func getUsers(w http.ResponseWriter, r *http.Request) {

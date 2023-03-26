@@ -16,9 +16,9 @@ var users []User
 func main() {
 	// Seed the in-memory store with some sample data
 	users = []User{
-		{ID: 1, Name: "Nikita", Email: "nikita@example.com"},
-		{ID: 2, Name: "Kevin", Email: "kevin@example.com"},
-		{ID: 3, Name: "Juan", Email: "juan@example.com"},
+		{ID: 1, Name: "Nikita", Email: "nikita@example.com", Username: ""},
+		{ID: 2, Name: "Kevin", Email: "kevin@example.com", Username: ""},
+		{ID: 3, Name: "Juan", Email: "juan@example.com", Username: ""},
 	}
 
 	// Define the HTTP endpoints for our API
