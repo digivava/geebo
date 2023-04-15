@@ -44,6 +44,11 @@ func createUser(w http.ResponseWriter, r *http.Request) {
 	var user User
 	json.NewDecoder(r.Body).Decode(&user)
 	user.ID = len(users) + 1
+	if user.Username == "" {
+		log.Printf("ERROR: Missing Username")
+		json.NewEncoder(w).Encode("ERROR: Missing Username")
+		return
+	}
 	users = append(users, user)
 	json.NewEncoder(w).Encode(user)
 }

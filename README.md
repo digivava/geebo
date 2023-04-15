@@ -22,6 +22,7 @@ When you write a test, you can run the tests with `go test .`
 
 1. Your teammates noticed an issue where for some reason, they aren't seeing any server logs when a request comes in to delete a user. Can you fix this?
 2. We want users to be able to have usernames. Can you make the `createUsers` endpoint accept a new field called "username"?
+   2a. Our code is getting a little complex. Let's move users.go code to its own package. Be mindful of package import cycle conflicts.
 3. Change your code to make it so if the user doesn't provide a username, we generate a default one for them that starts with their name, followed by a random number between 1 and 99.
 4. Write a unit test for your username generation function.
 5. Write a validation function that ensures two things:
